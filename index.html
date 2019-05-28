@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ron's Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="shop-container container">
+        <div class="shop-header container">
+            <h2>Shopping Cart</h2>
+        </div>
+        <div class="item container">
+            <span class="delete">✖</span>
+            <span class="favorite">❤</span>
+            <img class="item-image" src="img/012-martian.png">
+            <span class="item-description">7 days trip to Mars</span>
+            <span class="item-sub-description">All included</span>
+            <div class="amount">
+                <span onclick="increaseAmount(1)" class="amount-up">🔺</span>
+                <span class="amount-num item1">1</span>
+                <span onclick="decreaseAmount(1)" class="amount-down">🔻</span>
+                <span class="price price1">$1099</span>
+            </div>
+        </div>
+        <div class="item container">
+            <span class="delete">✖</span>
+            <span class="favorite">❤</span>
+            <img class="item-image" src="img/001-alien.png">
+            <span class="item-description">A Meeting with an alien</span>
+            <span class="item-sub-description">30 martian minutes meeting(~2.5 earthly sec)</span>
+            <div class="amount">
+                <span onclick="increaseAmount(2)" class="amount-up">🔺</span>
+                <span class="amount-num item2">2</span>
+                <span onclick="decreaseAmount(2)" class="amount-down">🔻</span>
+            </div>
+            <span class="price price2">$99</span>
+            
+        </div>
+        <div class="item container">
+            <span class="delete">✖</span>
+            <span class="favorite">❤</span>
+            <img class="item-image" src="img/025-black hole.png">
+            <span class="item-description">Full day trip to the black hole</span>
+            <span class="item-sub-description">Insurance not included</span>
+            <div class="amount">
+                <span onclick="increaseAmount(3)" class="amount-up">🔺</span>
+                <span class="amount-num item3">1</span>
+                <span onclick="decreaseAmount(3)" class="amount-down">🔻</span>
+            </div>
+            <span class="price price3">$899</span>
+        </div>
+        <div class="shop-footer container">
+            <a href="index.html">Back to Home Page</a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
